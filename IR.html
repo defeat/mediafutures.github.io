@@ -133,9 +133,11 @@ a.class2:hover{
 }
 
 p{
-	text-align: center;
+	text-align: left;
 	margin:0px;
 	padding:0px;
+	color: #000;
+	text-indent: 2px;
 }
 
 #h2 {
@@ -158,6 +160,10 @@ p{
 
 .col-md-3 {
 	margin-left: 10px;
+}
+
+#divWidth {
+ margin-left: 30px;
 }
 
 #sidebar {
@@ -188,6 +194,12 @@ p{
     width: 100%;
     height: 100%;
     }
+}
+
+img {
+ max-width: 100%; 
+ max-height: 100%; 
+ margin-top: 10px;
 }
 
 </style>
@@ -226,7 +238,7 @@ p{
 					<h1><a href="#" class="class2">DIGITAL RIGHTS MANAGEMENT</a></h1> 
 				</div>
 				<div>
-					<h1><a href="defeat.github.io/mediafutures.github.io/IR.html" class="class2">INFORMATION RETRIEVAL</a></h1>
+					<h1><a href="#" class="class2">INFORMATION RETRIEVAL</a></h1>
 				</div>
 				<div>
 					<h1><a href="#" class="class2">SOCIAL MEDIA</a></h1>
@@ -250,18 +262,37 @@ p{
 			  <!--DO NOT CHANGE THE ABOVE IN-DIV STYLING--> 
 			 	<div class="container row">
 					<div style="margin:0 auto"> 
-			  			<h2 class="h2">WHAT IS MEDIA FUTURES?</h2>
+			  			<h2 class="h2">INFORMATION RETRIEVAL</h2>
 			  	<!--	</div>
 					<div class="col-md-4" style="position: relative; margin-left: 30px; margin-right: 30px;"> -->
-						<div style="width: 90%; margin:0 auto">
-							<p style="color: #000; padding-top:17px; text-align: center;">Media Futures is a UCL Research Group with research based primarily on the media shared on the web. This includes text, video, photographs, audio, and many different types of files.</p>
-							<p style="color: #000; text-align: center">There are various different Research Areas within the Media Futures group and below is a video which briefly explains them as a whole.</p>
+						<div class="col-md-4" id="divWidth">
+							<p style="padding-top:17px;">Information Retrieval is the act of obtaining information from a library of information resources.</p>
+							<p>A query is passed into the IR system and the results shown must be relevant to the query. All results are given a value which allows ranking of results to match the query and to display the closest relevant result to a particular query</p>
+							<p>We use IR systems every single day. Whether that be in University Libraries or Public libraries, in the form of book search systems; or online.</p>
+							<p>Web search engines; such as Google, Yahoo and Bing are common types of IR Systems.</p>
+						</div>
+						<div class="col-md-4" style="margin-left:50px">
+							<p style="padding-top: 17px">Information Retrieval systems use different models to obtain the relevance ranking of a result to a query</p>
+							<p>Google, The world's most used Web Search Engine was built on the Standard Boolean Model. This model passes a query as a set of terms throughout all the data they have.</p>
+							<p>The terms are matched against found documents and documents with the most terms are ranked highest.</p>
+							<p>Below is a diagram of how this works.</p>
+						</div>
+						<div class="col-md-9" id="divWidth">
+							<div style="margin-top: 30px; font-family: times">
+								<p style="padding-top: 17px">Instead of linearly searching through each document with terms, A matrix of terms is created in advance which allows the passing of a boolean determinant to match a query.</p>
+								<p>Suppose a collection of Shakespeare's works.</p>
+								<p>An information index is created for the words in each Shakespeare play. They are passed as a 'term' in the matrix.</p>
+								<p>Depending on the column, a vector is created for a specific term which is contained within that play. This becomes a vector which has a 'true' value</p>
+								<center>
+									<img style="margin-top: 20px; margin-bottom: 20px" src="http://nlp.stanford.edu/IR-book/html/htmledition/img38.png">
+								</center>
+								<p >© 2008 Cambridge University Press</p>
+							</div>
+						</div>
+						<div class="col-md-4" id="divWidth">
+							<p style="padding-top:17px"></p>
 						</div>
 					</div>
-<!--					<p style="color: #000; padding-top:10px">Media Futures is a UCL Research Group with research based primarily on the media shared on the web. This includes text, video, photographs, audio, and many different types of files.</p>  -->
-		      	 		<div class="videoWrapper" style="width: 50%; margin-left: 34%; padding-top: 20px">
-						<iframe style="margin:0 auto; padding-top: 30px" width="560" height="315" src="https://www.youtube.com/embed/Ud32Blr0Q-I" frameborder="0" allowfullscreen></iframe>
-			 		</div>	
 				<!--STOP EDITING HERE -->
 				</div>
 			 </div>
